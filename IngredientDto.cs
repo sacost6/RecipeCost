@@ -1,9 +1,9 @@
 ﻿namespace RecipeCost.Shared;
 
-public class IngredientDto
+public record IngredientDto
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public string BaseUnit { get; set; } = "Gram"; // e.g., Gram, oz, cup
-    public decimal CostPerBaseUnit { get; set; }
+    public int Id { get; init; } // 'init' allows setting only during creation
+    public string Name { get; init; } = string.Empty;
+    public UnitType BaseUnit { get; init; } = UnitType.Gram;
+    public decimal CostPerBaseUnit { get; init; }
 }
