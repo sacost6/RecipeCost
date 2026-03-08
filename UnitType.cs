@@ -9,5 +9,8 @@ public enum UnitType
     Milliliter,
     Liter,
     Piece,
-    Each
+    Each,
+    Cup, 
+    Quart,
+    Gallon
 }
