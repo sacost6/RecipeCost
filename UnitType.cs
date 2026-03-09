@@ -12,5 +12,7 @@ public enum UnitType
     Each,
     Cup, 
     Quart,
-    Gallon
+    Gallon,
+    Teaspoon,
+    Tablespoon,
 }
